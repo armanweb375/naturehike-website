@@ -210,11 +210,10 @@ View Safari Packages
     <p>Duration: 7 Days</p>
     <p>Price: $1800</p>
     <div style="margin:10px 0;">
-<button onclick="document.getElementById('machame-info').style.display='block'">Information</button>
-      <button onclick="history.back()">Back</button>
-<button onclick="document.getElementById('machame-plan').style.display='block'">Travel Plan</button><button onclick="history.back()">Back</button>
-<button onclick="document.getElementById('machame-gallery').style.display='block'">Tour Gallery</button><button onclick="history.back()">Back</button>
-<button onclick="document.getElementById('machame-location').style.display='block'">Location</button><button onclick="history.back()">Back</button>
+<button onclick="document.getElementById('machame-info').style.display='block'">Information</button>      
+<button onclick="document.getElementById('machame-plan').style.display='block'">Travel Plan</button>
+<button onclick="document.getElementById('machame-gallery').style.display='block'">Tour Gallery</button>
+<button onclick="document.getElementById('machame-location').style.display='block'">Location</button>
 </div>
 
 <a href="https://wa.me/255764528605" target="_blank" style="display:inline-block;background:#ff6a00;color:white;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:10px;">
@@ -241,6 +240,7 @@ Book on WhatsApp
     
       <div id="machame-location" style="display:none;margin-top:15px;">
 <p><b>Location:</b> Mount Kilimanjaro, Tanzania</p>
+        <button onclick="document.getElementById('machame-location').style.display='none'" style="background:#ff6a00;color:white;border:none;padding:8px 15px;border-radius:5px;margin-bottom:10px;">Back</button>
 
 <iframe 
 src="https://www.google.com/maps?q=Mount+Kilimanjaro&output=embed"
@@ -250,11 +250,13 @@ style="border:0;">
 </iframe>
       </div>
       <div id="machame-gallery" style="display:none;margin-top:15px;">
+        <button onclick="document.getElementById('machame-location').style.display='none'" style="background:#ff6a00;color:white;border:none;padding:8px 15px;border-radius:5px;margin-bottom:10px;">Back</button>
 <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e" width="200">
 <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" width="200">
 <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" width="200">
       </div>
       <div id="machame-plan" style="display:none;margin-top:15px;color:white;">
+        <button onclick="document.getElementById('machame-plan').style.display='none'">Back</button>
 <p><b>Machame Route Travel Plan</b></p>
 <p>Day 1 – Machame Gate to Machame Camp</p>
 <p>Day 2 – Machame Camp to Shira Camp</p>
@@ -265,6 +267,7 @@ style="border:0;">
 <p>Day 7 – Descend to Mweka Gate</p>
       </div>
       <div id="machame-info" style="display:none;margin-top:15px;color:white;">
+        <button onclick="document.getElementById('machame-plan').style.display='none'">Back</button>
 <p><b>Machame Route Information</b></p>
 <p>The Machame Route is one of the most popular routes for climbing Mount Kilimanjaro. It offers beautiful scenery and a high success rate.</p>
 
